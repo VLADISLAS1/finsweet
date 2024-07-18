@@ -1,0 +1,101 @@
+header{
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav{
+    display: flex;
+}
+nav ul{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    column-gap: 10px;
+    margin-right: 50px;
+    border-right: 1px solid gray;
+    padding: 10px 45px;
+}
+nav ul li{
+    list-style: none;
+}
+
+.nav-right{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.nav-right .right-text{
+    font-size: 10px;
+}
+main{
+    width: 100%;
+    background-color: aquamarine;
+    height: 90vh;
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+    align-items: center;
+}
+main .wrapper{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+main .wrapper .main-text{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+main .wrapper .main-text .content{
+    width: 80%;
+}
+main .wrapper .main-text h1{
+    font-size: 2.9em;
+}
+
+main .wrapper .main-text .icon-work{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+main .wrapper .main-text .icon-work .logo-text{
+    line-height: 2px;
+}
+
+main .wrapper .right-image{
+    width: 50%;
+    height: 100%;
+    background-image: url(img/Image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+main .wrapper .right-image .Rating{
+    position: absolute;
+    bottom: 0;
+    right: -25%;
+
+}
+main .wrapper .right-image .Service{
+    position: absolute;
+    top: 0;
+    left: -20%;
+
+}
+main .btn{
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
