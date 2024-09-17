@@ -16,6 +16,9 @@ header{
     justify-content: space-between;
     margin-bottom: 50px;
     column-gap: 20%;
+    position: fixed;
+    left: 10%;
+    z-index: 50;
 }
 nav{
     display: flex;
@@ -95,34 +98,40 @@ nav ul li{
       transform: scale(1);
     }
   } */
-main{
+.parent-flex{
     width: 100%;
-    /* background-color: aquamarine; */
-    height: 75vh;
+    background-color:#fff;
+    height: 100vh;
     display: flex;
     justify-content: center; 
     flex-direction: column;
     align-items: center;
+   
 }
-main .wrapper{
+.parent-flex .wrapper{
     width: 80%;
-    height: 100%;
+    height: 80%;
     margin: 0 auto;
     display: flex;
+    justify-content: center;
+    /* background-color: goldenrod; */
 }
-main .wrapper .main-text{
+.parent-flex .wrapper .main-text{
     width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* background-color: #ff5722; */
     /* align-items: center; */
 }
+.parent-flex .wrapper .ri
 main .wrapper .main-text .content{
     width: 80%;
 }
 main .wrapper .main-text h1{
     font-size: 2.9em;
+    width: 80%;
     margin-bottom: 24px;
 }
 
@@ -132,11 +141,7 @@ main .wrapper .main-text .icon-work{
     gap: 10px;
     line-height: 26px;
 } 
-/* main .wrapper .main-text .icon-work .logo-text{
-    line-height: 2px;
-} */
-
-main .wrapper .right-image{
+.parent-flex .wrapper .right-image{
     width: 50%;
     height: 100%;
     background-image: url(img/Image.png);
@@ -145,19 +150,22 @@ main .wrapper .right-image{
     background-size: cover;
     position: relative;
 }
+.right-style{
+    width: 50%;
+    height: 100%;  
+    /* background-color: maroon; */
+}
 main .wrapper .right-image .Rating{
     position: absolute;
     bottom: -10%;
     right: -18%;
-
-
 }
-/* main .wrapper .right-image .Service{
+ main .wrapper .right-image .Service{
     position: absolute;
     top: -4%;
     left: -20%;
 
-} */
+} 
 main .wrapper .right-image .right-time{
     padding: 41px;
     width: 229px;
@@ -171,7 +179,6 @@ main .wrapper .right-image .right-time{
 }
 
 main .wrapper .right-image .time-lapse{
-    /* padding: 37px; */
     height: 74px;
     width: 209px;
     border-radius: 130px;
@@ -208,7 +215,6 @@ main .wrapper .right-image .time-circle{
 }
 main .wrapper .right-image .time-circle p{
     color: #FFF;
-    /* display: inline-block; */
 }
 main .btn{
     background-color: #ff5722;
@@ -227,4 +233,252 @@ main .btn:hover{
 }
 main .wrapper .logo-text p{
     color: #999;
+}
+#car-services{
+    background-color:#E2E6E9;
+}
+#car-services .wrapper .main-text h1{
+    font-size: 35px;
+    width: 64%;
+    margin-bottom: 5%;
+}
+#car-services .wrapper .main-text .Quote-1{
+    display: flex;
+    width: 64%;
+    gap: 10px;
+    line-height: 26px;
+    margin-bottom: 22px;    
+}
+#car-services .wrapper .main-text .Quote-1 .icon1 strong{
+    font-size: 19px
+}
+#car-services .wrapper .main-text .Quote-1 .icon1 .rot{
+    color: #1E1B1B;
+}
+#car-services .wrapper .main-text .Quote-2{
+    display: flex;
+    width: 64%;
+    gap: 10px;
+    line-height: 26px;
+    margin-bottom: 22px;   
+}
+#car-services .wrapper .main-text .Quote-2 .icon2 strong{
+    font-size: 19px;
+}
+#car-services .wrapper .main-text .Quote-2 .icon2 .rot{
+    color: #1E1B1B;
+}
+#car-services .wrapper .main-text .Quote-3{
+    display: flex;
+    width: 64%;
+    gap: 10px;
+    line-height: 26px;
+    margin-bottom: 22px;    
+}
+#car-services .wrapper .main-text .Quote-3 .icon3 strong{
+    font-size: 19px;
+}
+#car-services .wrapper .main-text .Quote-3 .icon3 .rot{
+    color: #1E1B1B;
+}
+.Arrow *{
+    text-decoration: none;
+    color: #1E1B1B;
+    margin-left: 9%;
+}
+#car-services .wrapper .right-style {
+    width: 50%;
+}
+#car-services .wrapper .right-style h2 {
+    font-size: 35px;
+    width: 64%;
+    /* line-height: 60px; */
+    margin-bottom: 10px;
+}
+#car-services .wrapper .right-style form input {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 2px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+#car-services .wrapper .right-style form button {
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    padding: 16px 40px;
+    margin-top: 25px;
+    border-radius: 9px;
+    transition: all ease-in-out 0.3s;
+}
+#car-services .wrapper .right-style form button:hover {
+    background-color: #E8441C;
+    transform:scale(1.05);
+    cursor: pointer;
+}
+#car-quote .wrapper .main-text h1{
+    font-size: 2.4em;
+    width: 74%;
+    margin-bottom: 20px;
+}
+#car-quote .wrapper .main-text p{
+    color: #1E1B1B;
+    width: 74%;
+}
+#car-quote .wrapper .main-text .learn-more {
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    padding: 16px 35px;
+    margin-top: 27px;
+    border-radius: 9px;
+    transition: all ease-in-out 0.3s;
+}
+#car-quote .wrapper .main-text .learn-more:hover{
+    background-color: #E8441C;;
+    transform:scale(1.05);
+    cursor: pointer;
+}
+#car-quote .wrapper .step-1{
+    display: flex;
+    gap: 20px;
+    line-height: 26px;
+    margin-bottom: 10px;
+}
+#car-quote .wrapper .step-1 h2{
+    line-height: 40px;
+}
+#car-quote .wrapper .right-style .step-1 .step-content1 p{
+    width: 60%;
+    color: #1E1B1B;
+}
+#car-quote .wrapper .icon-line{
+    position: relative;
+    margin-left: 20px;
+}
+#car-quote .wrapper .step-2{
+    display: flex;  
+    gap: 20px;
+    line-height: 26px;
+    margin-bottom: 10px;
+}
+#car-quote .wrapper .icon-line2{
+    position: relative;
+    margin-left: 20px;
+}
+#car-quote .wrapper .step-2 h2{
+    line-height: 40px;
+}
+#car-quote .wrapper .right-style .step-2 p{
+    width: 60%;
+    color: #1E1B1B;
+}
+#car-quote .wrapper .step-3{
+    display: flex;
+    gap: 20px;
+    line-height: 26px;
+    margin-bottom: 10px;
+}
+#car-quote .wrapper .step-3 h2{
+    line-height: 40px;
+}
+#car-quote .wrapper .right-style .step-3 p{
+    width: 60%;
+    color: #1E1B1B;
+}
+#offer-section{
+    background-color:#E2E6E9;
+    text-align: center; 
+}
+#offer-section .wrapper .offer-content h6{
+    font-size: 80%;
+    font-weight: 800;
+    color: #1E1B1B;
+}
+.what-we-offer-card{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.cards{
+    width: 215px;
+    height: 215px;
+    background:#FFF;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+.Icon12-Arrow *{
+    text-decoration: none;
+    color: #1E1B1B;
+    margin-right: -138%;
+}
+/* get a quote section */
+#album-section{
+    height: 10vh;
+    width: 100%;
+    background-color: #61C3A1;
+}
+#album-section .get-a-quote{
+    height: 60vh;
+    width: 100%;
+}
+#album-section .first-row{
+    display: flex;
+    height: 80%;
+    background-color: #E8441C;
+}
+#album-section .left-picture-fr{
+    width: 50%;
+    background-color: gold;
+    background-image: url(img/Image\ 1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+}
+#album-section .left-picture-fr p{
+    background-color: #E8441C;
+    width: 80%;
+    height: 48vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    color: #FFF;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+
+/* #album-section .left-picture-fr .form button{
+    background-color: #1E1B1B;
+    color: #fff;
+    border: none;
+    padding: 16px 35px;
+    margin-top: 27px;
+    border-radius: 9px;
+    transition: all ease-in-out 0.3s;
+}
+#album-section .left-picture-fr form button:hover{
+    background-color: #1E1B1B;
+    transform:scale(1.05);
+    cursor: pointer;
+}    */
+#album-section .right-picture-fr{
+    width: 50%;
+    background-color: #FFF;
+    background-image: url(img/ovGrEUgrkyE.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#album-section .second-row{
+    background-color: black;
+    height: 20%;
 }
