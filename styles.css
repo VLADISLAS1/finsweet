@@ -453,6 +453,14 @@ main .wrapper .logo-text p{
     font-weight: 600;
     text-align: center;
 }
+/* MOBILE RESPONSIVENESS */
+@media screen and (max-width: 425px){
+    header{
+        width: 100%;
+    }
+}
+
+
 
 
 
